@@ -1,0 +1,78 @@
+body {
+	font-size: 20px;
+	font-family: "Yrsa Light", serif;
+	@media screen and (max-width: 480px) {
+			font-size: 18px;
+	}
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-top: 0.7em;
+	&.stand-first {
+		margin-top: 4.5em;
+	}
+	&.sans {
+		font-family: "Source Sans Pro Light", sans-serif;
+	}
+}
+
+
+h1 {
+	font-family: "Yrsa Light", serif;
+	font-weight: 300;
+	font-size: 2em;
+	line-height: 1.2em;
+	margin-top: 1em
+}
+
+h2 {
+	font-family: "Source Sans Pro Semibold", sans-serif;
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-family: "Source Sans Pro Semibold", sans-serif;
+	font-weight: 600;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-top: 1.4em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-family: "Source Sans Pro Semibold", sans-serif;
+	font-weight: 600;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin: 2.2em 0 1.4em 0;
+}
+
+h5 {
+	font-family: "Source Sans Pro Light", sans-serif;
+	font-weight: 300;
+	font-size: 0.85em;
+	line-height: 1.2em;
+}
+
+em {
+	font-varient: italic;
+}
+
+small {
+	font-size: 0.9em;
+}
+
+a {
+	color: $darkest-colour;
+	text-decoration: none;
+	transition: ease 0.2s;
+}
+
+a:hover {
+	text-decoration: underline;
+}

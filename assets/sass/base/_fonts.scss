@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Yrsa Light';
+  src: url('../fonts/Yrsa-Light.woff') format('woff'),
+       url('../fonts/Yrsa-Light.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  300;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Semibold';
+  src: url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
+       url('../fonts/SourceSansPro-Semibold.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Source Sans';
+  src: url('../fonts/SourceSansPro-LightIt.woff') format('woff'),
+       url('../fonts/SourceSansPro-LightIt.ttf')  format('truetype');
+  font-style:   italic;
+  font-weight:  300;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: url('../fonts/SourceSansPro-Light.woff') format('woff'),
+       url('../fonts/SourceSansPro-Light.ttf')  format('truetype');    
+  font-style:   normal;
+  font-weight:  300;
+}
