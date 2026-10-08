@@ -7,13 +7,33 @@
 <link rel="icon" type="image/png" href="https://mstandage.com/assets/img/favicon.png">
 <title>Matthew Standage – Design Leader, AI Enthusiast, Design Systems Architect</title>
 <meta name="keywords" content="Matthew Standage, design leader, product design, UX design, AI design, design systems, design thinking, typography, information design, product strategy">
-<meta name="description" content="Matthew Standage is a thoughtful design leader and product strategist exploring the future of AI in user experience. Based in the UK, I create design systems and lead teams that transform complexity into clarity.">
+<meta name="description" content="Matthew Standage is a thoughtful design leader and product strategist exploring the future of AI in user experience. Based in the UK, I create design systems and [...]
 <meta name="author" content="Matthew Standage">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Matthew Standage – Design Leader & AI Enthusiast">
 <meta property="og:description" content="Thoughtful design leader exploring AI, UX strategy, and design systems that make complex products intuitive and beautiful.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mstandage.com">
+<style>
+  #shader-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+  }
+  
+  .panel__welcome {
+    position: relative;
+  }
+  
+  .panel__content {
+    position: relative;
+    z-index: 1;
+  }
+</style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,12 +47,13 @@
 </head>
 <body>
 <header class="panel panel panel__welcome">
+<canvas id="shader-bg"></canvas>
 <div class="panel__content">
 <div class="panel__content-welcome">
 <h3>Matthew Standage</h3>
 <h1>Design Leader &amp; Strategic Thinker</h1>
-<p class="stand-first">I'm a design-driven strategist based in the UK, passionate about the intersection of human experience, emerging technology, and thoughtful design. I believe the best products balance simplicity with sophistication—and that design systems are the foundation of coherent, scalable experiences.</p>
-<p>Currently, I am a Product Design Lead at Bottomline, where I partner with cross-functional teams to craft elegant solutions for complex financial workflows. I'm particularly interested in how artificial intelligence can augment human decision-making without compromising usability or trust. My work spans design strategy, design systems architecture, UX research, and design leadership—all grounded in a background spanning typography, information design, and behavioral psychology.</p>
+<p class="stand-first">I'm a design-driven strategist based in the UK, passionate about the intersection of human experience, emerging technology, and thoughtful design. I believe the best product[...]
+<p>Currently, I am a Product Design Lead at Bottomline, where I partner with cross-functional teams to craft elegant solutions for complex financial workflows. I'm particularly interested in how a[...]
 </div>
 </div>
 </header>
@@ -40,10 +61,10 @@
 <div class="panel__content panel__content--flex">
 <div class="panel__content-area--large">
 <h4>My Approach</h4>
-<p><strong>Systems over Solutions:</strong> I believe meaningful design work happens at the system level. Rather than solving individual problems, I focus on creating coherent design systems that empower teams and scale with products. This philosophy has shaped how I approach design systems, information architecture, and organizational design culture.</p>
-<p><strong>Informed by Craft:</strong> My foundation in typography and information design informs how I think about hierarchy, clarity, and the subtle craft of communication. Every detail matters—not for perfection's sake, but because thoughtful design is more human, more accessible, and ultimately more effective.</p>
-<p><strong>Exploring AI & Design:</strong> I'm actively exploring how AI can become a design partner—augmenting user capabilities, reducing cognitive load, and enabling people to focus on what uniquely human. I'm interested in the responsible, ethical intersection of AI and UX, not just the novelty.</p>
-<p><strong>Education & Recognition:</strong> MA (with distinction) in Information Design from the University of Reading. BA (Hons) in Graphic Communication from the Department of Typography &amp; Graphic Communication. Finalist, UXUK Awards for work on behavioral change and sustainable design.</p>
+<p><strong>Systems over Solutions:</strong> I believe meaningful design work happens at the system level. Rather than solving individual problems, I focus on creating coherent design systems that [...]
+<p><strong>Informed by Craft:</strong> My foundation in typography and information design informs how I think about hierarchy, clarity, and the subtle craft of communication. Every detail matters…[...]
+<p><strong>Exploring AI & Design:</strong> I'm actively exploring how AI can become a design partner—augmenting user capabilities, reducing cognitive load, and enabling people to focus on what u[...]
+<p><strong>Education & Recognition:</strong> MA (with distinction) in Information Design from the University of Reading. BA (Hons) in Graphic Communication from the Department of Typography &amp; [...]
 </div>
 </div>
 </section>
@@ -52,9 +73,9 @@
 <h4 class="no-margin-top">Find Me</h4>
 <p>Connect on LinkedIn for a complete view of my experience, or follow my thinking on design, strategy, and the future of UX.</p>
 <ul class="social-links">
-<li class="social"><a class="social__link" href="https://www.linkedin.com/in/mstandage/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/assets/img/symbols.svg#linkedin"></use></svg>LinkedIn</a></li>
-<li class="social"><a class="social__link" href="https://twitter.com/mstandage" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/assets/img/symbols.svg#twitter"></use></svg>Twitter</a></li>
-<li class="social"><a class="social__link" href="https://dribbble.com/mstandage" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/assets/img/symbols.svg#dribbble"></use></svg>Dribbble</a></li>
+<li class="social"><a class="social__link" href="https://www.linkedin.com/in/mstandage/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/as[...]
+<li class="social"><a class="social__link" href="https://twitter.com/mstandage" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/assets/img/[...]
+<li class="social"><a class="social__link" href="https://dribbble.com/mstandage" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" class="social__icon"><use xlink:href="/assets/img[...]
 </ul>
 </div>
 </section>
@@ -63,6 +84,422 @@
 <p><small>Copyright – Matthew Standage 2016</small></p>
 </div>
 </footer>
-<script data-cfasync="false" src="https://mstandage.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/web/20190129054901js_/https://mstandage.com/assets/js/scripts.min.js"></script>
+<script data-cfasync="false" src="https://mstandage.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/web/20190129054901js_/https://mstandage.com/assets/js[...]
+
+<script>
+// WebGL1 Shader Background: "Mesh drift"
+(function() {
+  const canvas = document.getElementById('shader-bg');
+  const welcomePanel = document.querySelector('.panel__welcome');
+  const gl = canvas.getContext('webgl', { antialias: false, depth: false, stencil: false });
+  
+  if (!gl) {
+    console.warn('WebGL not supported, shader background disabled');
+    return;
+  }
+
+  // Shader source
+  const vertexShader = `
+    precision highp float;
+    attribute vec2 position;
+    void main() {
+      gl_Position = vec4(position, 0.0, 1.0);
+    }
+  `;
+
+  const fragmentShader = `
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+
+uniform vec3 u_colors[8];
+uniform vec4 u_scene;
+uniform vec4 u_shape;
+uniform vec4 u_surface;
+uniform vec4 u_finish;
+uniform vec4 u_transform;
+uniform vec4 u_space;
+uniform vec4 u_cursor;
+
+#define u_resolution u_scene.xy
+#define u_time u_scene.z
+#define u_colorCount u_scene.w
+#define u_scale u_shape.x
+#define u_intensity u_shape.y
+#define u_paramA u_shape.z
+#define u_warp u_shape.w
+#define u_detail u_surface.x
+#define u_contrast u_surface.y
+#define u_brightness u_surface.z
+#define u_saturation u_surface.w
+#define u_hue u_finish.x
+#define u_vignette u_finish.y
+#define u_blur u_finish.z
+#define u_grain u_finish.w
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+#define u_seed u_transform.x
+#else
+#define u_seed mod(u_transform.x, 31.0)
+#endif
+#define u_rotate u_transform.y
+#define u_drift u_transform.z
+#define u_oklab u_transform.w
+#define u_offset u_space.xy
+#define u_mouse u_space.zw
+#define u_cursorPresence u_cursor.x
+#define u_cursorEffect u_cursor.y
+#define u_cursorStrength u_cursor.z
+#define u_cursorRadius u_cursor.w
+
+float hash21(vec2 p) {
+#ifndef GL_FRAGMENT_PRECISION_HIGH
+  p = mod(p, 31.0);
+#endif
+  p = fract(p * vec2(234.34, 435.345));
+  p += dot(p, p + 34.23);
+  return fract(p.x * p.y);
+}
+
+float grainHash(vec2 p) {
+  vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+  p3 += dot(p3, p3.yzx + 33.33);
+  return fract((p3.x + p3.y) * p3.z);
+}
+
+vec2 hash22(vec2 p) {
+#ifndef GL_FRAGMENT_PRECISION_HIGH
+  p = mod(p, 31.0);
+#endif
+  float n = sin(dot(p, vec2(41.0, 289.0)));
+  return fract(vec2(15731.743, 7892.321) * n);
+}
+
+float noise(vec2 p) {
+  vec2 i = floor(p);
+  vec2 f = fract(p);
+  vec2 u = f * f * (3.0 - 2.0 * f);
+  return mix(
+    mix(hash21(i), hash21(i + vec2(1.0, 0.0)), u.x),
+    mix(hash21(i + vec2(0.0, 1.0)), hash21(i + vec2(1.0, 1.0)), u.x),
+    u.y);
+}
+
+float fbm(vec2 p) {
+  float v = 0.0;
+  float a = 0.5;
+  for (int i = 0; i < 5; i++) {
+    v += a * noise(p);
+    p = p * 2.03 + vec2(17.0, 9.2);
+    a *= 0.5;
+  }
+  return v;
+}
+
+vec3 srgbToLinear(vec3 c) {
+  return mix(c / 12.92, pow((c + 0.055) / 1.055, vec3(2.4)),
+    step(0.04045, c));
+}
+
+vec3 linearToSrgb(vec3 c) {
+  return mix(c * 12.92, 1.055 * pow(max(c, vec3(0.0)), vec3(1.0 / 2.4)) - 0.055,
+    step(0.0031308, c));
+}
+
+vec3 linToOklab(vec3 c) {
+  float l = 0.4122214708 * c.r + 0.5363325363 * c.g + 0.0514459929 * c.b;
+  float m = 0.2119034982 * c.r + 0.6806995451 * c.g + 0.1073969566 * c.b;
+  float s = 0.0883024619 * c.r + 0.2817188376 * c.g + 0.6299787005 * c.b;
+  l = pow(max(l, 0.0), 1.0 / 3.0);
+  m = pow(max(m, 0.0), 1.0 / 3.0);
+  s = pow(max(s, 0.0), 1.0 / 3.0);
+  return vec3(
+    0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s,
+    1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s,
+    0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s);
+}
+
+vec3 oklabToLin(vec3 c) {
+  float l = c.x + 0.3963377774 * c.y + 0.2158037573 * c.z;
+  float m = c.x - 0.1055613458 * c.y - 0.0638541728 * c.z;
+  float s = c.x - 0.0894841775 * c.y - 1.2914855480 * c.z;
+  l = l * l * l; m = m * m * m; s = s * s * s;
+  return vec3(
+    4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
+    -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
+    -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s);
+}
+
+vec3 mixColour(vec3 a, vec3 b, float t) {
+  if (u_oklab > 0.5) {
+    vec3 la = linToOklab(srgbToLinear(a));
+    vec3 lb = linToOklab(srgbToLinear(b));
+    return clamp(linearToSrgb(oklabToLin(mix(la, lb, t))), 0.0, 1.0);
+  }
+  return mix(a, b, t);
+}
+
+vec3 palette(float x) {
+  float n = max(u_colorCount - 1.0, 1.0);
+  float f = clamp(x, 0.0, 1.0) * n;
+  vec3 col = u_colors[0];
+  for (int i = 0; i < 7; i++) {
+    if (float(i) < n)
+      col = mixColour(col, u_colors[i + 1],
+        smoothstep(0.0, 1.0, clamp(f - float(i), 0.0, 1.0)));
+  }
+  return col;
+}
+
+vec3 hueRotate(vec3 col, float a) {
+  const mat3 toYIQ = mat3(0.299, 0.596, 0.211,
+                          0.587, -0.274, -0.523,
+                          0.114, -0.322, 0.312);
+  const mat3 toRGB = mat3(1.0, 1.0, 1.0,
+                          0.956, -0.272, -1.106,
+                          0.621, -0.647, 1.703);
+  vec3 yiq = toYIQ * col;
+  float ca = cos(a), sa = sin(a);
+  yiq = vec3(yiq.x, yiq.y * ca - yiq.z * sa, yiq.y * sa + yiq.z * ca);
+  return toRGB * yiq;
+}
+
+vec3 shade(vec2 uv, vec2 p, float t) {
+  vec3 acc = u_colors[0] * 0.15;
+  float total = 0.15;
+  for (int i = 0; i < 8; i++) {
+    if (float(i) >= u_colorCount) break;
+    float fi = float(i);
+    vec2 c = vec2(
+      sin(t * (0.21 + fi * 0.071) + fi * 2.4 + u_seed),
+      cos(t * (0.17 + fi * 0.093) + fi * 1.7)) * (0.45 + u_intensity * 0.35);
+    float w = exp(-dot(p - c, p - c) * 6.0);
+    acc += u_colors[i] * w;
+    total += w;
+  }
+  return acc / total;
+}
+
+void main() {
+  vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+  vec2 screenUv = uv;
+  vec2 p = (gl_FragCoord.xy - 0.5 * u_resolution.xy)
+    / min(u_resolution.x, u_resolution.y);
+  float cursorMask = 0.0;
+
+  if (u_cursorPresence > 0.001) {
+    vec2 cursor = (0.5 * u_mouse * u_resolution.xy)
+      / min(u_resolution.x, u_resolution.y);
+    vec2 cursorDelta = p - cursor;
+    if (u_cursorEffect < 0.5) {
+      p += cursor * u_cursorPresence * u_cursorStrength * 0.55;
+    } else {
+      float cursorDistance = length(cursorDelta);
+      vec2 cursorDirection = cursorDelta / max(cursorDistance, 0.0001);
+      cursorMask = u_cursorPresence
+        * (1.0 - smoothstep(0.0, u_cursorRadius, cursorDistance));
+      if (u_cursorEffect < 1.5) {
+        p -= cursorDirection * cursorMask * u_cursorStrength * 0.24;
+      } else if (u_cursorEffect < 2.5) {
+        float cursorAngle = cursorMask * u_cursorStrength * 2.2;
+        float cc = cos(cursorAngle), cs = sin(cursorAngle);
+        p = cursor + mat2(cc, -cs, cs, cc) * cursorDelta;
+      } else if (u_cursorEffect < 3.5) {
+        float ripple = sin(
+          cursorDistance / max(u_cursorRadius, 0.001) * 18.0 - u_time * 5.0);
+        p -= cursorDirection * ripple * cursorMask * u_cursorStrength * 0.07;
+      }
+    }
+  }
+
+  uv = p * min(u_resolution.x, u_resolution.y) / u_resolution.xy + 0.5;
+  p *= u_scale;
+  
+  if (abs(u_rotate) > 0.0001) {
+    float cr = cos(u_rotate), sr = sin(u_rotate);
+    p = mat2(cr, -sr, sr, cr) * p;
+  }
+  p += u_offset;
+  if (u_drift > 0.0001)
+    p += u_drift * vec2(sin(u_time * 0.31), cos(u_time * 0.23));
+  
+  if (u_warp > 0.0) {
+    p += u_warp * (vec2(
+      fbm(p * u_detail + u_seed),
+      fbm(p * u_detail + vec2(5.2, 1.3))) - 0.5);
+  }
+  
+  vec3 col;
+  if (u_blur > 0.0) {
+    float e = u_blur;
+    float pe = e * u_scale;
+    vec2 uvE = vec2(e) * min(u_resolution.x, u_resolution.y) / u_resolution.xy;
+    col  = shade(uv, p, u_time) * 0.36;
+    col += shade(uv + vec2(uvE.x, 0.0), p + vec2(pe, 0.0), u_time) * 0.16;
+    col += shade(uv - vec2(uvE.x, 0.0), p - vec2(pe, 0.0), u_time) * 0.16;
+    col += shade(uv + vec2(0.0, uvE.y), p + vec2(0.0, pe), u_time) * 0.16;
+    col += shade(uv - vec2(0.0, uvE.y), p - vec2(0.0, pe), u_time) * 0.16;
+  } else {
+    col = shade(uv, p, u_time);
+  }
+  
+  if (abs(u_contrast - 1.0) > 0.0001)
+    col = (col - 0.5) * u_contrast + 0.5;
+  if (abs(u_saturation - 1.0) > 0.0001) {
+    float luma = dot(col, vec3(0.299, 0.587, 0.114));
+    col = mix(vec3(luma), col, u_saturation);
+  }
+  if (abs(u_hue) > 0.0001)
+    col = hueRotate(col, u_hue);
+  if (abs(u_brightness) > 0.0001)
+    col += u_brightness;
+  if (u_vignette > 0.0001) {
+    float vd = length(screenUv - 0.5) * 1.41421356;
+    col *= 1.0 - u_vignette * smoothstep(0.35, 1.0, vd);
+  }
+  if (u_cursorPresence > 0.001 && u_cursorEffect > 3.5)
+    col += (vec3(0.18) + col * 0.12) * cursorMask * u_cursorStrength;
+  if (u_grain > 0.0001)
+    col += (grainHash(
+      gl_FragCoord.xy + vec2(u_seed * 17.0, u_seed * 31.0)) - 0.5) * u_grain;
+  gl_FragColor = vec4(clamp(col, 0.0, 1.0), 1.0);
+}
+  `;
+
+  // Compile shaders
+  function compileShader(source, type) {
+    const shader = gl.createShader(type);
+    gl.shaderSource(shader, source);
+    gl.compileShader(shader);
+    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+      console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
+      return null;
+    }
+    return shader;
+  }
+
+  const vShader = compileShader(vertexShader, gl.VERTEX_SHADER);
+  const fShader = compileShader(fragmentShader, gl.FRAGMENT_SHADER);
+  
+  if (!vShader || !fShader) return;
+
+  const program = gl.createProgram();
+  gl.attachShader(program, vShader);
+  gl.attachShader(program, fShader);
+  gl.linkProgram(program);
+  
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.error('Program link error:', gl.getProgramInfoLog(program));
+    return;
+  }
+
+  gl.useProgram(program);
+
+  // Fullscreen triangle
+  const buffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+    -1, -1,
+     3, -1,
+    -1,  3
+  ]), gl.STATIC_DRAW);
+
+  const posLoc = gl.getAttribLocation(program, 'position');
+  gl.enableVertexAttribArray(posLoc);
+  gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+  // Uniform locations
+  const uResolution = gl.getUniformLocation(program, 'u_scene');
+  const uShape = gl.getUniformLocation(program, 'u_shape');
+  const uSurface = gl.getUniformLocation(program, 'u_surface');
+  const uFinish = gl.getUniformLocation(program, 'u_finish');
+  const uTransform = gl.getUniformLocation(program, 'u_transform');
+  const uSpace = gl.getUniformLocation(program, 'u_space');
+  const uCursor = gl.getUniformLocation(program, 'u_cursor');
+  
+  const colorLocs = [];
+  for (let i = 0; i < 8; i++) {
+    colorLocs.push(gl.getUniformLocation(program, `u_colors[${i}]`));
+  }
+
+  // Colors: #0B1026, #3D46E8, #B18CFF, #FFD6E7
+  const colors = [
+    [0.043, 0.063, 0.149],  // #0B1026
+    [0.239, 0.275, 0.910],  // #3D46E8
+    [0.694, 0.549, 1.000],  // #B18CFF
+    [1.000, 0.839, 0.906],  // #FFD6E7
+    [0.043, 0.063, 0.149],
+    [0.043, 0.063, 0.149],
+    [0.043, 0.063, 0.149],
+    [0.043, 0.063, 0.149]
+  ];
+
+  colors.forEach((color, i) => {
+    gl.uniform3f(colorLocs[i], color[0], color[1], color[2]);
+  });
+
+  let startTime = Date.now();
+  let isTabVisible = true;
+
+  document.addEventListener('visibilitychange', () => {
+    isTabVisible = !document.hidden;
+    if (isTabVisible) startTime = Date.now() - (animationTime || 0);
+  });
+
+  let animationTime = 0;
+
+  function resize() {
+    const rect = welcomePanel.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio, 2);
+    
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    
+    gl.viewport(0, 0, canvas.width, canvas.height);
+  }
+
+  function render() {
+    if (isTabVisible) {
+      animationTime = (Date.now() - startTime) * 0.001;
+    }
+
+    resize();
+
+    const seconds = animationTime * 0.86;
+    
+    gl.uniform4f(uResolution, canvas.width, canvas.height, seconds, 4.0);
+    
+    // u_shape: scale=1.50, intensity=0.55, paramA=0.50, warp=0.00
+    gl.uniform4f(uShape, 1.50, 0.55, 0.50, 0.00);
+    
+    // u_surface: detail=2.40, contrast=0.90 (45/100), brightness=0.0, saturation=1.0 (50/100)
+    gl.uniform4f(uSurface, 2.40, 0.90, 0.0, 1.0);
+    
+    // u_finish: hue=0.0, vignette=0.0, blur=0.0, grain=0.12 (12/100)
+    gl.uniform4f(uFinish, 0.0, 0.0, 0.0, 0.12);
+    
+    // u_transform: seed=1.0, rotation=0.0, drift=0.0, oklab=0.0
+    gl.uniform4f(uTransform, 1.0, 0.0, 0.0, 0.0);
+    
+    // u_space: offset=(0,0), pointer=(0,0)
+    gl.uniform4f(uSpace, 0.0, 0.0, 0.0, 0.0);
+    
+    // u_cursor: presence=0.0 (cursor off)
+    gl.uniform4f(uCursor, 0.0, 2.0, 0.65, 0.46);
+    
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    
+    if (isTabVisible) {
+      requestAnimationFrame(render);
+    }
+  }
+
+  resize();
+  render();
+
+  window.addEventListener('resize', resize);
+})();
+</script>
 </body>
 </html>
