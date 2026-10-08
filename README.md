@@ -8,9 +8,11 @@ Matthew Standage's personal website. Static HTML, CSS and JavaScript, with no fr
 - `assets/css/site.css`: near-black/off-white palette, asymmetric layout, Space Grotesk display type, Source Sans Pro reading type, responsive sizing, focus states and static artwork fallback.
 - `assets/js/site.js`: copyright year from the visitor's current JavaScript date, refreshed on page restoration and return to a visible tab. This runs independently of WebGL; with JavaScript disabled, the copyright name remains visible without a stale fixed year.
 - `assets/js/background.js`: native WebGL aurora-like interference fields, fine-pointer interaction and animation lifecycle.
+- `assets/img/favicon.svg`: off-white M monogram on a violet/blue/teal gradient; source artwork for the 32px PNG, multi-size ICO and 180px Apple touch icon.
+- `scripts/generate-favicons.cjs`: regenerate the bitmap and ICO assets from the SVG using the same temporary Playwright tooling as validation.
 - `tests/validate.cjs`: browser checks for content preservation, shader rendering, layouts, keyboard operation, motion preferences, fallbacks and automated accessibility.
 
-Original image, favicon, font and legacy source assets remain in place. The new page no longer loads the old production-hosted stylesheet, archived Universal Analytics script, archived site script or Cloudflare email-decoding script. No replacement analytics has been added.
+Original image, font and legacy source assets remain in place. The plain magenta favicon has been replaced by the requested gradient artwork. The new page no longer loads the old production-hosted stylesheet, archived Universal Analytics script, archived site script or Cloudflare email-decoding script. No replacement analytics has been added.
 
 The masthead and numbered section labels are removed. The name is the `h1`; the professional heading, "My approach" and "Contact me" are `h2` headings. The four approach topics use smaller `h3` headings. All headings use Space Grotesk, sentence case (except the name), no trailing colons, and "and" rather than ampersands. The compact LinkedIn link has no bottom rule. The accessible animation pause control remains in the opening section rather than a header.
 
@@ -23,6 +25,16 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory "$PWD"
 ```
 
 Run from the repository root, then visit `http://127.0.0.1:4173`. Choose another port if it is occupied.
+
+## Favicon artwork
+
+Edit the colours or monogram in `assets/img/favicon.svg`, then regenerate the derivatives after installing the validation tooling below:
+
+```sh
+NODE_PATH=/tmp/mstandage-validation/node_modules node scripts/generate-favicons.cjs
+```
+
+This writes `favicon.png` (32px), `favicon.ico` (16, 32 and 48px) and `apple-touch-icon.png` (180px). The SVG scales natively. Icon declarations include a version query to avoid reusing the previous favicon from cache; increment it when replacing the artwork again.
 
 ## Background configuration
 
@@ -65,6 +77,7 @@ The preview server must be running. `PREVIEW_URL` overrides its URL; `ARTIFACT_D
 
 Executed successfully in Chromium:
 
+- SVG, PNG, ICO and Apple touch favicon URLs load and decode; correct square dimensions, three ICO sizes and nonflat gradient PNG pixels.
 - Original prose retained with requested spaced en dashes, "and" substitutions, headings extracted from paragraphs and dynamic copyright year (normalized against Git `HEAD`); LinkedIn retained as the sole connection link, with Twitter and Dribbble removed by request.
 - Semantic, sentence-case Space Grotesk headings with matching section sizes and smaller subsection sizes; no header, numbered labels, ampersands or LinkedIn bottom rule.
 - Source Sans Pro body font, no page-source em dashes, and current copyright year. Simulated future years verify the year is not hard-coded; the year also works without WebGL.

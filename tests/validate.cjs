@@ -53,6 +53,38 @@ async function run() {
     await page.goto(url);
     await page.evaluate(() => document.fonts.ready);
     await page.waitForFunction(() => window.backgroundTest.draws > 3);
+    const faviconAssets = await page.evaluate(async () => {
+      const assets = [];
+      for (const link of document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]')) {
+        const response = await fetch(link.href);
+        const image = new Image();
+        image.src = link.href;
+        await image.decode();
+        assets.push({ name: new URL(link.href).pathname.split('/').pop(), loaded: response.ok, width: image.naturalWidth, height: image.naturalHeight });
+        if (link.type === 'image/png') {
+          const sample = document.createElement('canvas');
+          sample.width = sample.height = 32;
+          const drawing = sample.getContext('2d');
+          drawing.drawImage(image, 0, 0);
+          const pixels = drawing.getImageData(0, 0, 32, 32).data;
+          const colors = new Set();
+          for (let index = 0; index < pixels.length; index += 4) colors.add(Array.from(pixels.slice(index, index + 4)).join(','));
+          assets[assets.length - 1].colors = colors.size;
+        }
+      }
+      return assets;
+    });
+    assert.equal(faviconAssets.length, 4, 'SVG, PNG, ICO and Apple touch declarations');
+    assert(faviconAssets.every(asset => asset.loaded && asset.width === asset.height), 'All favicon assets load and decode');
+    assert.equal(faviconAssets.find(asset => asset.name === 'favicon.svg').width, 64);
+    assert.equal(faviconAssets.find(asset => asset.name === 'favicon.png').width, 32);
+    assert.equal(faviconAssets.find(asset => asset.name === 'apple-touch-icon.png').width, 180);
+    assert(faviconAssets.find(asset => asset.name === 'favicon.png').colors > 16, 'Gradient PNG has real pixel variation');
+    const ico = fs.readFileSync(path.join(root, 'assets/img/favicon.ico'));
+    assert.equal(ico.readUInt16LE(2), 1, 'Valid ICO type');
+    assert.equal(ico.readUInt16LE(4), 3, 'Three ICO sizes');
+    assert.deepEqual([ico[6], ico[22], ico[38]], [16, 32, 48]);
+    console.log('PASS: gradient SVG/PNG/ICO/Apple favicons load and decode; correct sizes and nonflat pixels');
     const preserved = await page.evaluate(html => {
       const old = new DOMParser().parseFromString(html, 'text/html');
       const normalize = text => text.replace(/\u2014/g, ' \u2013 ').replace(/&/g, 'and').replace(/\s+/g, ' ').trim().replace(/^(Copyright \u2013 Matthew Standage) \d{4}$/, '$1');
